@@ -47,6 +47,7 @@ namespace Exo1
             ColC[1] = cc2;
             ColC[10] = cc3;
             
+            
             Console.WriteLine(ColC[1].ToString());
             Console.WriteLine("test = " + ColC[10]?.ToString());
             Console.WriteLine(ColC[0].ToString());
@@ -57,6 +58,7 @@ namespace Exo1
             Console.WriteLine(ce1.ToString());
             ColC[2] = ce1;
             ColC[3] = compte1;
+            ColC.ajout(cc2);
             Console.WriteLine(ColC.ToString());
         }
     }

@@ -74,16 +74,19 @@ namespace Exo1
             }
         }
 
-        public void ajout(Compte m_Compte)
+        public Compte ajout(Compte m_Compte)
         {
             if (this.m_NbElt < this.m_Max)
             {
                 this.m_NbElt++;
-                this.m_Comptes[this.m_NbElt] = m_Compte;
+                this.m_Comptes[(this.m_NbElt - 1)] = m_Compte;
+                
+                return m_Compte;
             }
             else
             {
                 Console.WriteLine("Complet");
+                return null;
             }
         }
 
